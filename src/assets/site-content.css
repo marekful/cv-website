@@ -1,0 +1,137 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Playfair Display', serif;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 3.2rem;
+  color: var(--vt-c-black-mute);
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 2rem;
+  color: var(--vt-c-text-color-0);
+}
+
+h4 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-size: 1.7vw;
+  text-transform: uppercase;
+  color: var(--vt-c-black-soft);
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+h4 svg {
+  display: inline-block;
+  position: relative;
+  top: 0.2em;
+  margin-right: 0.4em;
+  width: 2vw;
+  fill: var(--vt-c-text-color-0);
+}
+
+p {
+  font-family: 'Barlow Semi Condensed', serif;
+  font-size: 1.1rem;
+  line-height: 1.4em;
+  margin: 0 0 1.5em 0;
+}
+
+.col-group {
+  margin-top: 6em;
+  display: grid;
+}
+.col-group-2.col-5-5 {
+  grid-template-columns: 50% 50%;
+}
+.col-group-2.col-4-6 {
+  grid-template-columns: 40% 60%;
+}
+.col-group-2.col-7-3 {
+  grid-template-columns: 70% 30%;
+}
+.col-group-3 {
+  grid-template-columns: 33.3% 33.3% 33.3%;
+}
+.col-group-3 p {
+  margin: 1em 0;
+}
+
+.col-group > div {
+  padding: 2em 0;
+  margin-right: 2em;
+}
+
+@media (max-width: 920px) {
+  h1 {
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: var(--vt-c-black-mute);
+  }
+
+  h3 {
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+    color: var(--vt-c-text-color-0);
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  h4 svg {
+    width: 1.5em;
+    display: block;
+    margin: 0.5em auto;
+  }
+
+  p {
+    font-family: 'Barlow Semi Condensed', serif;
+    font-size: 1.1rem;
+  }
+
+  .col-group {
+    margin-top: 2em;
+  }
+
+  .col-group-3 {
+    grid-template-columns: 100%;
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+  }
+
+  h4 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  h4 svg {
+    width: 1.5em;
+    display: block;
+    margin: 0.5em auto;
+  }
+
+  .col-group > div:first-child {
+    padding: 0 0 1em 0;
+  }
+  .col-group > div:last-child {
+    padding: 1em 0 0 0;
+  }
+  .col-group-2.col-5-5,
+  .col-group-2.col-4-6,
+  .col-group-2.col-7-3 {
+    grid-template-columns: 100%;
+    margin-top: 4em;
+  }
+}
