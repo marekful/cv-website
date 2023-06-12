@@ -26,6 +26,8 @@ import Project from '../fragments/ProjectFragment.vue'
                 frontend written in the Vue.js framework provides neat functionality to start, track
                 and abort remote transfers.
               </p>
+            </template>
+            <template #more>
               <p>
                 In the first prototype, remote connections were only possible if both servers had
                 WebSCP installed. Since then I have iterated to a next prototype (not yet published)
@@ -74,10 +76,18 @@ import Project from '../fragments/ProjectFragment.vue'
                 One of my earliest large projects I kept working on for years, jChat started out as
                 a browser-based chat application but ended becoming a framework for JavaScript
                 applications that came with UI components and many built-in features such as
-                internationalisation and a theme system alllwing to change language or look-and-feel
-                of the application components without reloading the page, dynamic form validation
-                rules and more.
+                internationalisation and a theme system allowing to change language and
+                look-and-feel of the application components without reloading the page, dynamic form
+                validation rules and more.
               </p>
+              <p>
+                The driving motivation was to create the whole thing in vanilla JS, without any
+                libraries, frameworks or tools such as jQuery which was just becoming very popular
+                at the time. This had been a great opportunity to master ECMA Script and
+                browser DOM manipulation techniques.
+              </p>
+            </template>
+            <template #more>
               <p>
                 It utilised the ability of browsers that JavaScript could be executed on any website
                 from a "Bookmarklet". This allowed me to create an instant messaging app that users
@@ -165,6 +175,8 @@ import Project from '../fragments/ProjectFragment.vue'
                 in the 2000s after just a few days, measured in an ELO based rating system used on
                 FIBS. Very few humans get ever close to 2000 in Backgammon.
               </p>
+            </template>
+            <template #more>
               <p>
                 The implementation required much more than just a very well directed game play
                 logic. Backgammon is mostly played by humans and they don't like to lose, especially

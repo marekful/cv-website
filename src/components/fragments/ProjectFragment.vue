@@ -1,7 +1,15 @@
 <script setup>
+import { ref } from 'vue'
 import { Label } from '../../api/labels'
+import ChevronDownIcon from '../icons/ChevronDownIcon.vue'
+import ChevronUpIcon from '../icons/ChevronUpIcon.vue'
 import GitHubIcon from '../icons/GitHubIcon.vue'
 import LabelIcon from '../icons/LabelIcon.vue'
+
+let show = ref(false)
+const more = () => {
+  show.value = !show.value
+}
 
 defineProps({
   linkHref: {
@@ -36,8 +44,25 @@ defineProps({
       </span>
     </div>
   </div>
+
   <div class="description">
     <slot name="description"></slot>
+  </div>
+
+  <div v-if="$slots.more !== undefined">
+    <div class="show-more">
+      <a href="#" @click.prevent="more">
+        <span>
+          <ChevronDownIcon v-if="show === false" />
+          <ChevronUpIcon v-else />
+        </span>
+        <span v-if="show === false">more</span>
+        <span v-else>less</span>
+      </a>
+    </div>
+    <div v-if="show === true" class="description more">
+      <slot name="more"></slot>
+    </div>
   </div>
 </template>
 
@@ -83,6 +108,18 @@ h1 {
 
 .link a:hover {
   text-decoration: underline;
+}
+
+.show-more {
+  float: right;
+  position: relative;
+  clear: both;
+}
+
+.description.more {
+  clear: right;
+  top: 1em;
+  position: relative;
 }
 
 .link a svg {
