@@ -1,14 +1,38 @@
 <script setup>
+import { ref } from "vue";
 import { aggregate } from '../../api/labels'
 import InfoCircleOutlineIcon from "../icons/InfoCircleOutlineIcon.vue";
+import EyeRefreshOutlineIcon from "../icons/EyeRefreshOutlineIcon.vue";
+
+let show = ref(false);
+let tooltip = ref(null);
+const toggle = () => {
+  show.value = !show.value;
+  console.log("toggle() > ", show.value, tooltip.value.style);
+  if (show.value) {
+    tooltip.value.style.left = "1em";
+    tooltip.value.style.opacity = "1";
+  } else {
+    tooltip.value.style.left = "-34em";
+    tooltip.value.style.opacity = "0";
+  }
+}
+
+let shuffle = ref(false);
+const relabel = () => {
+  shuffle.value = !shuffle.value;
+}
 </script>
 
 <template>
   <div class="container">
     <div>
+      <div v-if="shuffle === true"></div>
       <div class="info">
-        <InfoCircleOutlineIcon />
-        <div class="text">
+        <EyeRefreshOutlineIcon title="Click to shuffle tags" @click="relabel()" />
+        <InfoCircleOutlineIcon @mouseenter="toggle()" @mouseleave="toggle()"
+        />
+        <div class="text" ref="tooltip">
           This size of each tag label represents the combined professional
           and interest based weighting for the given area.<br /><br />Professional weight
           expresses the time spent in jobs using the language or technology
@@ -51,10 +75,10 @@ div.container > div {
 
 .info .text {
   position: absolute;
-  right: 3em;
-  bottom: -12em;
+  left: -34em;
+  width: 22em;
+  top: 0;
   transition: 0.5s;
-  opacity: 0;
   text-align: left;
   padding: 1em;
   font-size: 0.9rem;
@@ -66,17 +90,18 @@ div.container > div {
   border: 1px solid var(--vt-c-divider-light-1);
   border-radius: 0.25em;
   box-shadow: 0 0 12px -2px rgba(0, 0, 0, 0.15);
-}
-
-.info:hover .text {
-  bottom: -6em;
-  opacity: 1;
+  opacity: 0;
 }
 
 .info svg {
-  width: 1.5em;
+  width: 1.33em;
   fill: var(--vt-c-divider-dark-1);
   cursor: pointer;
+  vertical-align: middle;
+}
+
+.info svg:first-child {
+  margin-right: 1em;
 }
 
 ul.cloud {
