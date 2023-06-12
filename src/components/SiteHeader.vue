@@ -96,9 +96,8 @@ h6 {
   align-content: flex-start;
   flex-wrap: wrap;
   position: relative;
-  top: 12em;
-  scale: 1.5;
-  right: 2em;
+  top: 0;
+  right: 10em;
 }
 
 .greetings {
@@ -156,7 +155,7 @@ h6 {
 
 .profile img {
   height: auto;
-  max-width: 100%;
+  max-width: 150%;
   border-radius: 50%;
   vertical-align: middle;
   display: inline-block;
@@ -202,7 +201,6 @@ h6 {
     order: 1;
     right: 0;
     top: 0;
-    scale: 1;
   }
 
   h1 {
@@ -237,9 +235,11 @@ h6 {
 
 @media (max-width: 712px) {
   .flex-group.flex-group-2 > div:last-child {
-    right: 0;
+    left: unset;
+    right: 0.66em;
     top: 0;
-    scale: 1;
+    width: 70%
   }
 }
+
 </style>

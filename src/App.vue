@@ -114,13 +114,7 @@ onMounted(() => {
   <header>
     <div>
       <div class="logo">
-        <img
-          alt="Site logo"
-          class="logo-image"
-          src="./assets/logo-empty.jpg"
-          width="80"
-          height="40"
-        />
+        <div class="logo-placeholder">Logo image</div>
         <div class="title"><h2>Marcell Fülöp</h2></div>
       </div>
       <div class="nav desktop">
@@ -158,6 +152,11 @@ header > div {
   margin: 0 1em;
 }
 
+h2 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 500;
+}
+
 .logo,
 .nav {
   display: flex;
@@ -171,10 +170,16 @@ header > div {
   display: none;
 }
 
-.logo-image {
+.logo-placeholder {
   display: block;
-  margin: 1rem;
-  float: left;
+  position: relative;
+  width: 80px;
+  height: 40px;
+  margin: 1em;
+  background-color: white;
+  font-size: 0.7rem;
+  text-align: center;
+  line-height: 40px;
 }
 
 .title {

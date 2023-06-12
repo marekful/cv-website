@@ -58,7 +58,7 @@ const moreJobs = () => {
         </Job>
         <Job :labels="labels('loxon')">
           <template #dates>11/2019 – 08/2020</template>
-          <template #employer>Loxon Solutions</template>
+          <template #employer>Loxon Solutions cPlc</template>
           <template #job-title>Dev-Ops Engineer</template>
           <template #locations>Budapest, HU</template>
           <template #job-description-short>
@@ -120,7 +120,7 @@ const moreJobs = () => {
         </Job>
         <Job :labels="labels('virgo')">
           <template #dates>01/2015 – 02/2016</template>
-          <template #employer>Virgo Systems</template>
+          <template #employer>Virgo Systems Ltd</template>
           <template #job-title>Senior Web Developer</template>
           <template #locations>Budapest, HU</template>
           <template #job-description-short>

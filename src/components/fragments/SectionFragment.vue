@@ -37,7 +37,6 @@ h3 {
   width: 2em;
   top: 20%;
   height: 60%;
-  border: 1px solid red;
 }
 
 .section {
