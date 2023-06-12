@@ -1,9 +1,10 @@
 <script setup>
 import { ref } from 'vue'
-import Section from '../fragments/SectionFragment.vue'
 import Job from '../fragments/WorkExperienceFragment.vue'
+import LabelCloud from "../fragments/LabelCloud.vue";
+import Section from '../fragments/SectionFragment.vue'
 
-import { labels, aggregate as allLabels } from '../../api/labels'
+import { labels } from '../../api/labels'
 
 let showJobs = ref(false)
 
@@ -17,15 +18,7 @@ const moreJobs = () => {
     <template #heading>Education & Experience</template>
     <h1>Work Experience</h1>
     <div class="col-group col-group-2 col-4-6 experience">
-      <div class="label-cloud-container">
-        <ul class="label-cloud">
-          <li v-for="(label, idx) in allLabels()" :key="idx">
-            <a :data-weight="label.total_weight" :style="`color: ${label.color};`">
-              {{ label.text }}
-            </a>
-          </li>
-        </ul>
-      </div>
+      <LabelCloud />
       <div>
         <Job :labels="labels('zego')">
           <template #dates>04/2021 – 08/2022</template>
@@ -329,18 +322,6 @@ ul {
 
 /* -------- */
 
-div.label-cloud-container {
-  position: relative;
-  margin: 1.5em 5em 0 0;
-}
-
-.label-cloud {
-  position: sticky;
-  top: 8em;
-}
-
-/* -------- */
-
 .more-jobs {
   margin-top: 2em;
 }
@@ -352,71 +333,5 @@ div.label-cloud-container {
 
 .show-more svg {
   top: 0;
-}
-
-ul.label-cloud {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  line-height: 2.5rem;
-  padding: 1em;
-  border-radius: 0.25em;
-  background-color: transparent;
-  background-image: linear-gradient(135deg, #fdfeff 5%, #d0b5b512 70%);
-  opacity: 1;
-  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
-}
-
-ul.label-cloud a[data-weight='0'] {
-  --size: 1.5;
-}
-ul.label-cloud a[data-weight='1'] {
-  --size: 2;
-}
-ul.label-cloud a[data-weight='2'] {
-  --size: 2.5;
-}
-ul.label-cloud a[data-weight='3'] {
-  --size: 3;
-}
-ul.label-cloud a[data-weight='4'] {
-  --size: 3.5;
-}
-ul.label-cloud a[data-weight='5'] {
-  --size: 4;
-}
-ul.label-cloud a[data-weight='6'] {
-  --size: 4.5;
-}
-ul.label-cloud a[data-weight='7'] {
-  --size: 6;
-}
-ul.label-cloud a[data-weight='8'] {
-  --size: 6.5;
-}
-ul.label-cloud a[data-weight='9'] {
-  --size: 7;
-}
-ul.label-cloud a[data-weight='10'] {
-  --size: 7.5;
-}
-
-ul.label-cloud a {
-  display: block;
-  /*font-size: 1.1rem;*/
-  padding: 0.125rem 0.25rem;
-  text-decoration: none;
-  position: relative;
-  --size: 4;
-  font-size: calc(var(--size) * 0.25rem + 0rem);
-  line-height: 1.25rem;
-}
-
-@media (max-width: 920px) {
-  .label-cloud-container {
-    width: 100%;
-  }
 }
 </style>
