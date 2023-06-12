@@ -363,10 +363,7 @@ const _labels = {
     Label.Create(textNodeJS, 0.88, 0),
     Label.Create(textJavaScript, 1, 0)
   ],
-  kate: [
-    Label.Create(textC, 0.4, 0),
-    Label.Create(textCPP, 0.4, 0),
-  ],
+  kate: [Label.Create(textC, 0.4, 0), Label.Create(textCPP, 0.4, 0)],
   matchdog: [Label.Create(textJava, 0.9, 0)],
   jchat: [Label.Create(textJavaScript, 0.8, 0)],
   esp32: [

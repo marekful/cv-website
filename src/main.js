@@ -19,8 +19,6 @@ const router = createRouter({
   history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
-    //console.log("scrollBehavior() > ", to, from, savedPosition);
-
     if (!to.hash) {
       return false
     }

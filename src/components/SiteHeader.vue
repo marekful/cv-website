@@ -238,8 +238,7 @@ h6 {
     left: unset;
     right: 0.66em;
     top: 0;
-    width: 70%
+    width: 70%;
   }
 }
-
 </style>

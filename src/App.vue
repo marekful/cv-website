@@ -72,7 +72,7 @@ window.addEventListener('scroll', function (event) {
   }
 })
 
-/* Handle updating the current URL path based which page content section is in the viewport */
+/* Handle updating the current URL path based on which page content section is in the viewport */
 const $router = useRouter()
 let sectionObserver = null
 
@@ -80,7 +80,7 @@ const observeSections = () => {
   try {
     sectionObserver.disconnect()
   } catch (error) {
-    console.log("Observer didn't disconnect");
+    console.log("Observer didn't disconnect")
   }
 
   const options = {
@@ -98,7 +98,7 @@ const observeSections = () => {
 const sectionObserverHandler = (entries) => {
   for (const entry of entries) {
     if (entry.isIntersecting) {
-      console.log("Intersects() > ", entry, entry.target.dataset.sectionId);
+      console.log('Intersects() > ', entry, entry.target.dataset.sectionId)
       $router.push({ name: entry.target.dataset.sectionId })
     }
   }
@@ -153,7 +153,7 @@ header > div {
 }
 
 h2 {
-  font-family: "Barlow Semi Condensed", sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 500;
 }
 
