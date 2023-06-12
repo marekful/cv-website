@@ -2,9 +2,11 @@
 import { ref } from 'vue'
 import { useSlots } from 'vue'
 import { Label } from '../../api/labels'
+import ChevronDownIcon from '../icons/ChevronDownIcon.vue'
 import ChevronRightFilledIcon from '../icons/ChevronRightFilledIcon.vue'
 import LocationIcon from '../icons/LocationIcon.vue'
 import LabelIcon from '../icons/LabelIcon.vue'
+import ChevronUpIcon from '../icons/ChevronUpIcon.vue'
 
 const slots = useSlots()
 
@@ -60,12 +62,8 @@ defineProps({
     <div v-if="slots['job-description'] !== undefined" class="show-more">
       <a href="#" @click.prevent="more">
         <span>
-          <svg v-if="show === false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-          </svg>
-          <svg v-else xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-            <path d="M7.41,15.41L12,10.83L16.59,15.41L18,14L12,8L6,14L7.41,15.41Z" />
-          </svg>
+          <ChevronDownIcon v-if="show === false" />
+          <ChevronUpIcon v-else />
         </span>
         <span v-if="show === false">more</span>
         <span v-else>less</span>
