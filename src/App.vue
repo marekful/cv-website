@@ -5,10 +5,6 @@ import SiteHeader from './components/SiteHeader.vue'
 import SiteContent from './components/SiteContent.vue'
 import DesktopNavigation from './components/DesktopNavigation.vue'
 import MobileNavigation from './components/MobileNavigation.vue'
-/*
-<!-- <SiteContent ref="siteContent" /> -->
-const siteContent = ref();
-*/
 
 let top = 0 // .scrollTop
 let prevTop = 0
@@ -19,7 +15,7 @@ let prevEventTime = 0
 let moved = 0 // pixels
 let header
 
-/* Handle show and hide of the top navigation menu */
+/* Handle showing and hiding the top navigation menu on page scroll */
 const showMenu = () => {
   if (header) {
     header.style.top = '0'
@@ -98,7 +94,6 @@ const observeSections = () => {
 const sectionObserverHandler = (entries) => {
   for (const entry of entries) {
     if (entry.isIntersecting) {
-      console.log('Intersects() > ', entry, entry.target.dataset.sectionId)
       $router.push({ name: entry.target.dataset.sectionId })
     }
   }
