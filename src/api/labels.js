@@ -241,6 +241,7 @@ const textSVN = 'SVN'
 const textSymfony = 'Symfony'
 
 const textTDD = 'TDD'
+const textTypeScript = 'TypeScript'
 
 const textVue = 'Vue.js'
 
@@ -249,27 +250,27 @@ const textZend = 'PHP Zend Framework'
 
 const _labels = {
   cohort: [
-    Label.Create(textPHP, 1, 0),
+    Label.Create(textPHP, 1, 0.4),
     Label.Create(textMySQL, 0.8, 0),
     Label.Create(textREST, 0.8, 0),
     Label.Create(textJavaScript, 1, 0),
-    Label.Create(textJQuery, 1, 0),
+    Label.Create(textJQuery, 0.8, 0),
     Label.Create(textApacheJMeter, 0.4, 0),
     Label.Create(textApacheAnt, 0.2, 0),
     Label.Create(textJenkins, 0.2, 0),
     Label.Create(textDataDog, 0.3, 0),
     Label.Create(textAWS_EC2, 0.6, 0),
-    Label.Create(textAWS_ALB, 0.6, 0),
-    Label.Create(textAWS_Lambda, 0.2, 0),
-    Label.Create(textAWS_Route53, 0.5, 0),
-    Label.Create(textAWS_VPC, 0.5, 0),
+    Label.Create(textAWS_ALB, 0.6, 0.3),
+    Label.Create(textAWS_Lambda, 0.2, 0.2),
+    Label.Create(textAWS_Route53, 0.5, 0.3),
+    Label.Create(textAWS_VPC, 0.5, 0.5),
     Label.Create(textAWS_DBMS, 0.8, 0),
-    Label.Create(textAWS_Aurora, 0.5, 0),
+    Label.Create(textAWS_Aurora, 0.5, 0.3),
     Label.Create(textAWS_CloudFront, 0.7, 0),
     Label.Create(textAWS_CodeDeploy, 0.7, 0),
     Label.Create(textBash, 0.5, 0),
-    Label.Create(textGit, 0.3, 0),
-    Label.Create(textGitHub, 0.2, 0)
+    Label.Create(textGit, 0.8, 1),
+    Label.Create(textGitHub, 0.6, 0.6)
   ],
   loxon: [
     Label.Create(textDocker, 1, 0),
@@ -285,8 +286,8 @@ const _labels = {
     Label.Create(textJava, 0.4, 0),
     Label.Create(textSpringBoot, 0.2, 0),
     Label.Create(textBash, 0.5, 0),
-    Label.Create(textGit, 0.8, 0),
-    Label.Create(textGitHub, 0.6, 0)
+    Label.Create(textGit, 0.8, 1),
+    Label.Create(textGitHub, 0.6, 0.7)
   ],
   markcomedia: [
     Label.Create(textPHP, 1.0, 0),
@@ -296,18 +297,18 @@ const _labels = {
     Label.Create(textSVN, 0.7, 0)
   ],
   netm: [
-    Label.Create(textPHP, 1, 0),
+    Label.Create(textPHP, 1, 0.5),
     Label.Create(textMySQL, 0.8, 0),
     Label.Create(textSymfony, 1, 0),
     Label.Create(textDoctrineORM, 0.9, 0),
     Label.Create(textJavaScript, 0.8, 0),
     Label.Create(textREST, 1, 0),
-    Label.Create(textAWS_EC2, 1, 0),
-    Label.Create(textAWS_RDS, 1, 0),
-    Label.Create(textAWS_CloudFront, 0.6, 0),
+    Label.Create(textAWS_EC2, 0.8, 0.4),
+    Label.Create(textAWS_RDS, 0.8, 0.4),
+    Label.Create(textAWS_CloudFront, 0.6, 0.3),
     Label.Create(textBash, 0.5, 0),
-    Label.Create(textGit, 0.6, 0),
-    Label.Create(textGitHub, 0.6, 0)
+    Label.Create(textGit, 0.6, 0.4),
+    Label.Create(textGitHub, 0.6, 1)
   ],
   virgo: [
     Label.Create(textNodeJS, 1, 0),
@@ -317,9 +318,9 @@ const _labels = {
     Label.Create(textREST, 0.7, 0),
     Label.Create(textTDD, 1, 0),
     Label.Create(textMochaJS, 0.8, 0),
-    Label.Create(textCypress, 0.4, 0),
+    Label.Create(textCypress, 0.4, 0.3),
     Label.Create(textPgsql, 1, 0),
-    Label.Create(textGit, 0.5, 0),
+    Label.Create(textGit, 0.5, 0.6),
     Label.Create(textBitBucket, 1, 0),
     Label.Create(textBamboo, 0.8, 0)
   ],
@@ -328,18 +329,19 @@ const _labels = {
     Label.Create(textMySQL, 1, 0),
     Label.Create(textDoctrineORM, 0.4, 0),
     Label.Create(textJavaScript, 1, 0),
-    Label.Create(textGit, 0.4, 0),
+    Label.Create(textGit, 0.4, 0.7),
     Label.Create(textGitHub, 0.2, 0)
   ],
   zego: [
     Label.Create(textPython, 1, 0),
     Label.Create(textDjango, 1, 0),
-    Label.Create(textPgsql, 1, 0),
+    Label.Create(textTypeScript, 0.3, 0.3),
     Label.Create(textGRPC, 1, 0),
+    Label.Create(textPgsql, 1, 0),
     Label.Create(textFastAPI, 0.6, 0),
     Label.Create(textDocker, 1, 0),
     Label.Create(textDataDog, 0.7, 0),
-    Label.Create(textReact, 0.4, 0),
+    Label.Create(textReact, 0.4, 0.3),
     Label.Create(textGraphQL, 0.6, 0),
     Label.Create(textNextJS, 0.6, 0),
     Label.Create(textK8s, 0.5, 0),
@@ -348,12 +350,12 @@ const _labels = {
     Label.Create(textBuildKite, 1, 0),
     Label.Create(textAWS_EC2, 0.3, 0),
     Label.Create(textGit, 1, 0),
-    Label.Create(textGitHub, 1, 0),
+    Label.Create(textGitHub, 1, 1),
     Label.Create(textGitHubActions, 0.6, 0)
   ],
   webscp: [
-    Label.Create(textGo, 0.4, 0.5),
-    Label.Create(textRust, 0.25, 1),
+    Label.Create(textGo, 0.4, 0.7),
+    Label.Create(textRust, 0.3, 1),
     Label.Create(textVue, 0.9, 0),
     Label.Create(textRocket, 0.5, 0),
     Label.Create(textBash, 0.5, 0)
@@ -363,11 +365,11 @@ const _labels = {
     Label.Create(textNodeJS, 0.88, 0),
     Label.Create(textJavaScript, 1, 0)
   ],
-  kate: [Label.Create(textC, 0.4, 0), Label.Create(textCPP, 0.4, 0)],
-  matchdog: [Label.Create(textJava, 0.9, 0)],
+  kate: [Label.Create(textC, 0.4, 0), Label.Create(textCPP, 0.4, 0.75)],
+  matchdog: [Label.Create(textJava, 0.4, 0.8)],
   jchat: [Label.Create(textJavaScript, 0.8, 0)],
   esp32: [
-    Label.Create(textEmbeddedC, 0.4, 0),
+    Label.Create(textEmbeddedC, 0.3, 0.85),
     Label.Create(textC, 0.4, 0),
     Label.Create(textFreeRTOS, 0.6, 0),
     Label.Create(textRiscV, 0.3, 0)
