@@ -197,6 +197,7 @@ import Project from '../fragments/ProjectFragment.vue'
             </template>
           </Project>
         </div>
+        <div class="divider hide"></div>
       </div>
     </div>
   </Section>
@@ -234,6 +235,10 @@ import Project from '../fragments/ProjectFragment.vue'
   position: relative;
 }
 
+.divider.hide {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .col-group-2.col-5-5 {
     display: flex;
@@ -246,6 +251,10 @@ import Project from '../fragments/ProjectFragment.vue'
   .col-group > div:last-child {
     margin-left: 0;
     order: 1;
+  }
+
+  .divider.hide {
+    display: block;
   }
 }
 </style>
