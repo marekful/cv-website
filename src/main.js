@@ -12,7 +12,7 @@ const routes = [
   { path: '/experience', component: App, name: 'experience' },
   { path: '/education', component: App, name: 'education' },
   { path: '/projects', component: App, name: 'projects' },
-  { path: '/contact', component: App, name: 'contact' }
+  { path: '/download', component: App, name: 'download' }
 ]
 
 const router = createRouter({

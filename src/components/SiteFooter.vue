@@ -3,7 +3,7 @@ import Section from './fragments/SectionFragment.vue'
 </script>
 
 <template>
-  <Section rel="contact" id="contact">
+  <Section rel="download" id="download">
     <div class="footer">
       <div class="content-wrap">
         <div class="col-group col-group-2 col-7-3">

@@ -45,7 +45,7 @@ export default {
             <router-link :to="{ name: 'projects', hash: '#' }">Projects</router-link>
           </li>
           <li class="menu-item" @click="toggleMenu">
-            <router-link :to="{ name: 'contact', hash: '#' }">Contact</router-link>
+            <router-link :to="{ name: 'download', hash: '#' }">Download</router-link>
           </li>
         </ul>
       </nav>
