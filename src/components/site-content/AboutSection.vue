@@ -28,7 +28,7 @@ import Section from '../fragments/SectionFragment.vue'
         <p>
           Having spent fifteen years in the industry as a professional and twenty-seven years after
           I completed the first website I got paid for, I can still get literally excited when I try
-          things I've never done before in programming. It's this special ability feeds my
+          things I've never done before in programming. It's this special ability that feeds my
           enthusiasm and leads to an ever increasing interest in learning and working with new and
           developing technologies.
         </p>

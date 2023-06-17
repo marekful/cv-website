@@ -95,7 +95,7 @@ import Project from '../fragments/ProjectFragment.vue'
                 messaging app in the browser while visiting a 3rd party website, any website really,
                 and send and receive messages between one another while on different sites. This was
                 pretty unique and cool back in the time but the industry has moved towards browser
-                extensions and native solutions like Electron to achieve similar results.
+                extensions and other solutions like Electron to achieve similar results.
               </p>
             </template>
           </Project>

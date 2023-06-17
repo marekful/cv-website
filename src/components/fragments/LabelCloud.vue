@@ -30,7 +30,10 @@ const relabel = () => {
       <div v-if="shuffle === true"></div>
       <div class="info">
         <EyeRefreshOutlineIcon title="Click to shuffle tags" @click="relabel()" />
-        <InfoCircleOutlineIcon @mouseenter="toggle()" @mouseleave="toggle()"
+        <InfoCircleOutlineIcon
+          @mouseenter="toggle()"
+          @mouseleave="toggle()"
+          @click="toggle()"
         />
         <div class="text" ref="tooltip">
           This size of each tag label represents the combined professional
