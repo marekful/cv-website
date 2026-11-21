@@ -6,10 +6,9 @@ WORKDIR /app
 COPY . .
 
 RUN npm ci && \
-     npm run lint && \
+    npm run lint && \
     npm run test:unit && \
-    npm run build && \
-    adduser -g 'Nginx www user' -h /home/www/ wwwcbz
+    npm run build
 
 FROM alpine AS release
 
