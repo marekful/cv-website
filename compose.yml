@@ -12,4 +12,4 @@ services:
           memory: 50M
         reservations:
           cpus: '0.02'
-          memory: 5M
+          memory: 6M
