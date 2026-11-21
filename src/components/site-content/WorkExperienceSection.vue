@@ -206,7 +206,7 @@ const moreJobs = () => {
             <template #job-description>
               <p>
                 The product,
-                <a target="_blank" href="http://myvouchercodes.co.uk">MyVoucherCodes.co.uk</a>,
+                <a target="_blank" href="https://myvouchercodes.co.uk">MyVoucherCodes.co.uk</a>,
                 still popular today, was the market leader Voucher, Coupon Code and Discount Deals
                 website in the UK which also ran websites in the US, Brazil and other European
                 countries including Germany and France.

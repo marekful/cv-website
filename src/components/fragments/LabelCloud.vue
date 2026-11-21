@@ -8,7 +8,6 @@ let show = ref(false);
 let tooltip = ref(null);
 const toggle = () => {
   show.value = !show.value;
-  console.log("toggle() > ", show.value, tooltip.value.style);
   if (show.value) {
     tooltip.value.style.left = "1em";
     tooltip.value.style.opacity = "1";
@@ -101,10 +100,17 @@ div.container > div {
   fill: var(--vt-c-divider-dark-1);
   cursor: pointer;
   vertical-align: middle;
+  opacity: 0.5;
 }
 
 .info svg:first-child {
   margin-right: 1em;
+  font-size: 1rem;
+  padding-bottom: 0.1em;
+}
+
+.info svg:hover {
+  opacity: 1;
 }
 
 ul.cloud {
