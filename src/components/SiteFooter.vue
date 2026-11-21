@@ -20,13 +20,13 @@ import Section from './fragments/SectionFragment.vue'
             <div class="download">
               <h2>Download</h2>
               <div>
-                <a href="https://domainloop.net/s/nb8rNf8os84c2Jd" target="_blank">CV (PDF)</a>
+                <a href="https://next.domainloop.net/s/xyziSaGQq9N7GXz" target="_blank">CV (PDF)</a>
               </div>
               <div>
-                <a href="https://domainloop.net/s/F9DPZd4o9JoBbgP" target="_blank">CV (ODT)</a>
+                <a href="https://next.domainloop.net/s/eHLHZfdjYxKASRS" target="_blank">CV (ODT)</a>
               </div>
               <div>
-                <a href="https://domainloop.net/s/6MggCLbDHos3rDX" target="_blank">Diploma (JPG)</a>
+                <a href="https://next.domainloop.net/s/MH9nwq6JfXn4TqE" target="_blank">Diploma (JPG)</a>
               </div>
             </div>
             <div class="social">
