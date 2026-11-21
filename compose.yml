@@ -5,10 +5,10 @@ services:
     ports:
       - "10.0.0.83:9080:80"
     deploy:
-  resources:
-    limits:
-      cpus: '0.5'
-      memory: 150M
-    reservations:
-      cpus: '0.1'
-      memory: 50M
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 150M
+        reservations:
+          cpus: '0.1'
+          memory: 50M
