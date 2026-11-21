@@ -1,0 +1,7 @@
+version: "3.5"
+services:
+  app:
+    image: 'marekful/cv-website'
+    restart: unless-stopped
+    ports:
+      - "10.0.0.83:9080:80"
