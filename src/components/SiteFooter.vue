@@ -46,7 +46,7 @@ import Section from './fragments/SectionFragment.vue'
           </div>
         </div>
       </div>
-      <div class="copyright">Copyright © 2023 Marcell Fülöp</div>
+      <div class="copyright">Copyright © 2027 Marcell Fülöp</div>
     </div>
   </Section>
 </template>
