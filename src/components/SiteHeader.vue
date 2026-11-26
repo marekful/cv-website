@@ -17,14 +17,12 @@ import PhoneIcon from 'vue-material-design-icons/Phone.vue'
           <ul>
             <li>
               <span class="icon"><EmailIcon /></span>
-              <a href="mailto:marekful@domainloop.net">marekful@domainloop.net</a>
+              <a href="mailto:marekful@domainloop.net">marcell.fulop@domainloop.net</a>
             </li>
             <li>
               <span class="icon"><PhoneIcon /></span>
               <span>
                 <a href="tel:+44 7460 391787">+44 7460 391787</a>
-                <span>・</span>
-                <a href="tel:+36 70 9477560">+36 70 9477560</a>
               </span>
             </li>
           </ul>
